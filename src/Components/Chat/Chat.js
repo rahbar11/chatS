@@ -84,7 +84,7 @@ const Chat = ({currentRoom, setCurrentRoom, socket, setError, password}) => {
                 </div>
                 <div className="bg-black fixed bottom-0 left-0 w-100 flex" style={{height: "17%", zIndex: "10"}}>
                     <textarea className="bg-transparent input outline-0 ma2 w-75" ref={input} onInput={event => setMsg(event.target.value)}></textarea>
-                    <div className="ma4 center pa2 pointer b--dashed hover" onClick={sendMsg} >Send</div>
+                    <div className="ma4 center pa2 pointer h-50 flex items-center b--dashed hover" onClick={sendMsg} >Send</div>
                 </div>
             </div>
     )
