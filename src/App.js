@@ -8,7 +8,7 @@ import Chat from "./Components/Chat/Chat";
 
 import './App.css';
 
-const socket = io('https://s-chat-s.herokuapp.com')
+const socket = io('https://s-chats-s.herokuapp.com')
 
 function App() {
   const [currentRoom, setCurrentRoom] = useState("")
