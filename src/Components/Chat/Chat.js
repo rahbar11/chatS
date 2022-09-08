@@ -16,7 +16,7 @@ const Chat = ({currentRoom, setCurrentRoom, socket, setError, password}) => {
             try {
                 const decMsg = Crypto.AES.decrypt(message, decKey).toString(Crypto.enc.Utf8)
                 if (decMsg) {
-                    decMsgs.push(<div className="bg-black w-100 f6" key={index}><p className="pa1 ma1 b--dashed">{decMsg}</p></div>)
+                    decMsgs.push(<div className="bg-black w-100 f6" key={index}><p style={{whiteSpace: "pre"}} className="pa1 ma1 b--dashed">{decMsg}</p></div>)
                 }
             } catch {
                 return
