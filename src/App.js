@@ -8,7 +8,7 @@ import Chat from "./Components/Chat/Chat";
 
 import './App.css';
 
-const socket = io('http://139.59.30.125:8334')
+const socket = io('https://chats-server-morh.onrender.com')
 
 function App() {
   const [currentRoom, setCurrentRoom] = useState("")
